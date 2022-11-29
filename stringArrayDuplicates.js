@@ -9,9 +9,8 @@
 // Strings will be lowercase only, no spaces. See test cases for more examples. 
 
 function dup(s) {
- return s.split('').filter((item, i, arr) => arr[i] != arr[i-1]).join('')
+ return s.map(word => word.split('').filter((item, i, arr) => arr[i] != arr[i-1]).join(''));
 };
 
-console.log(dup("allottee"))
-console.log(dup("abracadabra"))
-console.log(dup("assessee"))
+console.log(dup(["abracadabra","allottee","assessee"]))
+console.log(dup(["kelless","keenness"]))
