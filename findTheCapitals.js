@@ -8,7 +8,7 @@ var capitals = function (word) {
   let result = [];
 	for(i=0;i<word.length;i++){
     if(word[i] == word[i].toUpperCase()){
-      result.push(word.indexOf(word[i]))
+      result.push(word[i])
     }
   }
   return result;
