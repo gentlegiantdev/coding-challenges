@@ -33,3 +33,4 @@ function rowWeights(array){
   }
   return [team1, team2]
 }
+
