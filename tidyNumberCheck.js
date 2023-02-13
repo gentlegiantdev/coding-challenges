@@ -33,12 +33,5 @@
 // The number's digits {2 , 3, 3, 5} are in non-Decreasing Order , Note 3 <= 3
 
 function tidyNumber(n){
-  let arr = n.toString().split("")
-  for(i=0;i<arr.length;i++){
-    if(arr[i] < arr[i+1]){
-      return true;
-    } else{
-      return false;
-    }
-  }
+  return [...n+=""].sort().join``==n
 }
