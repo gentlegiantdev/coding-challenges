@@ -24,12 +24,13 @@
 // Note:
 // Don't forget to convert the percent parameter as a percentage in the body of your function: if the parameter percent is 2 you have to convert it to 0.02.
 
-
 function nbYear(p0, percent, aug, p) {
-  let yearCount = 0;  
+  let yearCount = 0;
+  let sum = 0;
   while(p0 < p){
     yearCount++;
-    p0 = p0 + (p0 * (percent/100)) + aug
+    sum = Math.floor(p0 + (p0 * (percent/100)) + aug);
+    p0 = sum;
   }
   return yearCount;
 }
